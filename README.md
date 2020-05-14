@@ -9,11 +9,16 @@ These instructions will get you a copy of the project up and running on your loc
 
 
 ### Prerequisites
-What things you need to install the software and how to install them
+What things you need to install the software and how to install them:
 - [Android Studio](https://developer.android.com/studio)
 - [Firebase](https://firebase.google.com/)
 
 ### Installing
+After installing Android Studio and create project in Firebase, now you can setup your project in Android Studio:
+1. Open Android Studio
+2. In the Welcome to Android Studio dialog, click Start a new Android Studio project.
+![Image description](link-to-image)
+
 
 How to run:
 1. Clone the code and run on Android Studio
