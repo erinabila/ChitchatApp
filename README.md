@@ -15,9 +15,10 @@ What things you need to install the software and how to install them:
 
 ### Installing
 After installing Android Studio and create project in Firebase, now you can setup your project in Android Studio:
-1. Open Android Studio
-2. In the Welcome to Android Studio dialog, click Start a new Android Studio project
 
+1. Open Android Studio.
+
+2. In the Welcome to Android Studio dialog, click Start a new Android Studio project.
 ![alt text](https://github.com/erinabila/MessengerApp/blob/master/img_readme/two_install.PNG)
  
 3. Select Basic Activity (not the default). Click Next.
