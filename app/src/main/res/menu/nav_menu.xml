@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_new_message"
+        android:icon="@drawable/createmsg"
+        android:title="New Message"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/menu_profile"
+        android:icon="@drawable/myprofile"
+        android:title="Profile"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/menu_sign_out"
+        android:icon="@drawable/logout"
+        android:title="Sign Out"
+        app:showAsAction="ifRoom" />
+
+
+
+</menu>
