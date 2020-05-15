@@ -28,10 +28,10 @@ After installing Android Studio and create project in Firebase, now you can setu
 ![alt text](https://github.com/erinabila/MessengerApp/blob/master/img_readme/four_install.PNG)
 
 
-How to run:
+### How to run:
 1. Clone the code and run on Android Studio
 2. Sync Firebase in Android Studio to have your user database
-   - How? Follow the instructions here https://firebase.google.com/docs/android/setup
+   - How? Follow the instructions [here](https://firebase.google.com/docs/android/setup)
 3. Now you are ready to run your app! 
 
 
