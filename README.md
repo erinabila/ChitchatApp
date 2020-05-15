@@ -3,10 +3,7 @@
 This is a messenger Android app for users to text each other. This is used with Kotlin, Java, Firebase, Android Studio. 
 
 ## Getting Started
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. Click on the video below for a demo:
-
-[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/grki3KX6KEE/0.jpg)](http://www.youtube.com/watch?v=grki3KX6KEE)
-
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
 ### Prerequisites
 What things you need to install the software and how to install them:
