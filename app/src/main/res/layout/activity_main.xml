@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@android:color/holo_green_light">
 
 
@@ -13,11 +15,12 @@
         android:layout_marginTop="8dp"
         android:background="@drawable/rounded_edittext_register_login"
         android:ems="10"
-        android:hint="Email "
+        android:hint="@string/email"
         android:inputType="textEmailAddress"
         app:layout_constraintEnd_toEndOf="@+id/username_register"
         app:layout_constraintStart_toStartOf="@+id/username_register"
-        app:layout_constraintTop_toBottomOf="@+id/username_register" />
+        app:layout_constraintTop_toBottomOf="@+id/username_register"
+        android:autofillHints="" />
 
 
     <EditText
@@ -27,20 +30,21 @@
         android:layout_marginTop="8dp"
         android:background="@drawable/rounded_edittext_register_login"
         android:ems="10"
-        android:hint="Password"
+        android:hint="@string/password"
         android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="@+id/email_register"
         app:layout_constraintStart_toStartOf="@+id/email_register"
-        app:layout_constraintTop_toBottomOf="@+id/email_register" />
+        app:layout_constraintTop_toBottomOf="@+id/email_register"
+        android:autofillHints="" />
 
 
     <Button
         android:id="@+id/button_register"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="16dp"
         android:background="@drawable/rounded_button"
-        android:text="Register "
+        android:text="@string/register"
         android:textColor="@android:color/white"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@+id/password_register"
@@ -53,9 +57,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:text="Already have an account?"
+        android:text="@string/already_have_an_account"
         android:textColor="@android:color/background_light"
         android:textSize="16sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@+id/button_register"
         app:layout_constraintStart_toStartOf="@+id/button_register"
         app:layout_constraintTop_toBottomOf="@+id/button_register" />
@@ -64,14 +69,11 @@
         android:id="@+id/username_register"
         android:layout_width="0dp"
         android:layout_height="50dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginLeft="32dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="32dp"
-        android:layout_marginRight="32dp"
+        android:layout_marginTop="16dp"
+        android:autofillHints=""
         android:background="@drawable/rounded_edittext_register_login"
         android:ems="10"
-        android:hint="Username"
+        android:hint="@string/username"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -83,9 +85,9 @@
         style="buttonStyle"
         android:layout_width="150dp"
         android:layout_height="150dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="32dp"
         android:background="@drawable/rounded_selected_photo"
-        android:text="Select Photo"
+        android:text="@string/select_photo"
         android:textColor="@android:color/background_light"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -95,11 +97,13 @@
         android:id="@+id/round_photo"
         android:layout_width="150dp"
         android:layout_height="150dp"
+        android:layout_marginBottom="8dp"
         app:layout_constraintBottom_toBottomOf="@+id/selectphoto"
         app:layout_constraintEnd_toEndOf="@+id/selectphoto"
-        app:layout_constraintHorizontal_bias="0.389"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/selectphoto"
-        app:layout_constraintTop_toTopOf="@+id/selectphoto" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
     <!--&lt;!&ndash;    app:civ_border_width="4dp"&ndash;&gt; adds the border around the picture-->
 
 </androidx.constraintlayout.widget.ConstraintLayout>
