@@ -165,6 +165,9 @@ class RegisterActivity : AppCompatActivity() {
   }
 
   // User object
-  class User(val uid: String, val username: String, val profileImageUrl: String)
+  class User(val uid: String, val username: String, val profileImageUrl: String){
+    // Prevent a 'no-user argument' error
+    constructor(): this("","","")
+  }
 
 }
