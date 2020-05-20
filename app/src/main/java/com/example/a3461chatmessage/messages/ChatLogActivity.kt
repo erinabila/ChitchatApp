@@ -1,4 +1,4 @@
-package com.example.a3461chatmessage
+package com.example.a3461chatmessage.messages
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -6,6 +6,8 @@ import android.os.Bundle
 import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
+import com.example.a3461chatmessage.*
+import com.example.a3461chatmessage.models.User
 import com.example.a3461chatmessage.registerlogin.RegisterActivity
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.ChildEventListener
@@ -20,26 +22,21 @@ import kotlinx.android.synthetic.main.activity_chat_log_activitiy.*
 class ChatLogActivity : AppCompatActivity() {
 
   companion object {
-    val TAG = "ChatLog"
+    const val TAG = "ChatLog"
   }
 
   val adapter = GroupAdapter<ViewHolder>()
-
   var toUser: User? = null
 
   override fun onCreate(savedInstanceState: Bundle?) {
     super.onCreate(savedInstanceState)
     setContentView(R.layout.activity_chat_log_activitiy)
-
     recycler_view_chat_log.adapter = adapter
-
     toUser = intent.getParcelableExtra<User>(NewMessageActivity.USER_KEY)
-
+    //Header name set to the user's username chatting to
     supportActionBar?.title = toUser?.username
-
 //    setupDummyData()
     listenForMessages()
-
     send_button_chat_log.setOnClickListener {
       Log.d(TAG, "Attempt to send message....")
       performSendMessage()

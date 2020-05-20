@@ -1,16 +1,15 @@
-package com.example.a3461chatmessage
+package com.example.a3461chatmessage.messages
 
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import android.util.Log
-import androidx.recyclerview.widget.RecyclerView
+import com.example.a3461chatmessage.R
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.database.ValueEventListener
-import com.example.a3461chatmessage.R
-import com.example.a3461chatmessage.User
+import com.example.a3461chatmessage.models.User
 import com.google.firebase.auth.FirebaseAuth
 import com.squareup.picasso.Picasso
 import com.xwray.groupie.GroupAdapter
@@ -58,19 +57,15 @@ class NewMessageActivity : AppCompatActivity() {
         }
 
         adapter.setOnItemClickListener { item, view ->
-
           val userItem = item as UserItem
-
           val intent = Intent(view.context, ChatLogActivity::class.java)
+          //pass User object when opening ChatLogActivity to msg the selected user
           intent.putExtra(USER_KEY, userItem.user)
           startActivity(intent)
-
           finish()
-
         }
         recylerview_newmessage.adapter = adapter
       }
-
       override fun onCancelled(p0: DatabaseError) {
       }
     })

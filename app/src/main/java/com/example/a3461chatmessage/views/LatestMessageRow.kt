@@ -1,7 +1,7 @@
 package com.example.a3461chatmessage.views
 
 import com.example.a3461chatmessage.R
-import com.example.a3461chatmessage.User
+import com.example.a3461chatmessage.models.User
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError

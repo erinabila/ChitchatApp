@@ -1,5 +1,6 @@
 package com.example.a3461chatmessage
 
+import com.example.a3461chatmessage.models.User
 import com.squareup.picasso.Picasso
 import com.xwray.groupie.Item
 import com.xwray.groupie.ViewHolder

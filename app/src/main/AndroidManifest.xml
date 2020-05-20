@@ -19,12 +19,12 @@
         <activity android:name=".LoginActivity"/>
         <activity android:name=".ProfileActivity"/>
         <activity android:name=".registerlogin.MyProfileActivity"/>
-        <activity android:name=".NewMessageActivity">
+        <activity android:name=".messages.NewMessageActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".LatestMessagesActivity" />
         </activity>
-        <activity android:name=".ChatLogActivity">
+        <activity android:name=".messages.ChatLogActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".LatestMessagesActivity" />

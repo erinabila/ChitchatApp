@@ -7,6 +7,9 @@ import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
 import androidx.recyclerview.widget.DividerItemDecoration
+import com.example.a3461chatmessage.messages.ChatLogActivity
+import com.example.a3461chatmessage.messages.NewMessageActivity
+import com.example.a3461chatmessage.models.User
 import com.google.firebase.auth.FirebaseAuth
 import com.example.a3461chatmessage.registerlogin.RegisterActivity
 import com.example.a3461chatmessage.registerlogin.MyProfileActivity
