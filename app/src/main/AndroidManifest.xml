@@ -16,8 +16,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".registerlogin.RegisterActivity"/>
-        <activity android:name=".LoginActivity"/>
-        <activity android:name=".ProfileActivity"/>
+        <activity android:name=".registerlogin.LoginActivity"/>
+        <activity android:name=".registerlogin.ProfileActivity"/>
         <activity android:name=".registerlogin.MyProfileActivity"/>
         <activity android:name=".NewMessageActivity">
             <meta-data

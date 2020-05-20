@@ -1,4 +1,4 @@
-package com.example.a3461chatmessage
+package com.example.a3461chatmessage.registerlogin
 
 import android.content.Intent
 import android.os.Bundle
@@ -29,7 +29,6 @@ class ProfileActivity : AppCompatActivity() {
         Log.d("Profile Activity", "reached here!")
         super.onCreate(savedInstanceState)
         setContentView(R.layout.profile_activity)
-
 
     }
 
