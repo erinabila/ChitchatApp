@@ -19,6 +19,7 @@ import java.util.*
 
 class RegisterActivity : AppCompatActivity() {
 
+
   companion object {
     const val TAG = "RegisterActivity"
   }
