@@ -23,13 +23,13 @@
           }
         },
         {
-          "client_id": "764598926612-1egnl4nt4i493nbunskd80rljbo0eibm.apps.googleusercontent.com",
+          "client_id": "INSERT-HERE",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyAQ6HqbZLYNy9-YYaCMI98Tl57KVF09KgE"
+          "current_key": "INSERT-HERE"
         }
       ],
       "services": {
