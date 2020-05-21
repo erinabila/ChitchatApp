@@ -21,7 +21,7 @@ import com.xwray.groupie.ViewHolder
 import kotlinx.android.synthetic.main.activity_latest_messages.*
 
 class LatestMessagesActivity : AppCompatActivity() {
-  //Global Variable
+
   companion object {
     var currentUser: User? = null
     val TAG = "LatestMessages"
@@ -53,11 +53,11 @@ class LatestMessagesActivity : AppCompatActivity() {
 
   val latestMessagesMap = HashMap<String, ChatMessage>()
 
-  //Updates to be the latest message
   private fun refreshRecyclerViewMessages() {
     adapter.clear()
     latestMessagesMap.values.forEach {
       adapter.add(LatestMessageRow(it))
+
     }
   }
 
@@ -65,14 +65,12 @@ class LatestMessagesActivity : AppCompatActivity() {
     val fromId = FirebaseAuth.getInstance().uid
     val ref = FirebaseDatabase.getInstance().getReference("/latest-messages/$fromId")
     ref.addChildEventListener(object: ChildEventListener {
-      //get latest message from the user and display on ChatMessage page
       override fun onChildAdded(p0: DataSnapshot, p1: String?) {
         val chatMessage = p0.getValue(ChatMessage::class.java) ?: return
-        //p0.key is the recipient user's id
         latestMessagesMap[p0.key!!] = chatMessage
         refreshRecyclerViewMessages()
       }
-      //monitors the change to be the latest message shown
+
       override fun onChildChanged(p0: DataSnapshot, p1: String?) {
         val chatMessage = p0.getValue(ChatMessage::class.java) ?: return
         latestMessagesMap[p0.key!!] = chatMessage
@@ -105,6 +103,7 @@ class LatestMessagesActivity : AppCompatActivity() {
       }
 
       override fun onCancelled(p0: DatabaseError) {
+
       }
     })
   }
