@@ -1,4 +1,4 @@
-# MessengerApp
+# Chitchat App
  
 This is a messenger Android app for users to text each other. This is used with Kotlin, Java, Firebase, Android Studio. 
 
